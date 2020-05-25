@@ -6,9 +6,7 @@ class ProfilePicture extends Component {
         return (
             <div className = 'Picture_part'>
                 <div className = 'Picture_round'>
-                    <span>
-                        <img src="file:///C:/Users/USER/Desktop/ImageShare/Screenshots/Screenshot_2020-05-04-19-47-10.png" alt="Profile"/>
-                    </span>
+                    <img  src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Profile"/>
                 </div>
             </div>
         )
