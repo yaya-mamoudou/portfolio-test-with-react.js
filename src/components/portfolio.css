@@ -1,5 +1,6 @@
 
 *{
+    font-size: 1.021em;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -7,9 +8,11 @@
     letter-spacing: -2;
     line-height: 1;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    scroll-behavior: smooth;
 }
 
 :root{
+    --tab-transition: all 1s;
     --gradient: linear-gradient(45deg,#534666, #cd7672, #eeb462);
     --origin-color: #bd5d38;
     --second-origine: burlywood;
@@ -51,8 +54,13 @@ h4{
     font-size: 1.4rem;
     font-weight: 100;
 }
+a{
+    text-decoration: none !important;
+    color: white;
+}
 
 .nav_bar{
+    position: fixed;
     width: 100%;
     background-image: var(--gradient);
     color: white;
@@ -72,20 +80,23 @@ h4{
     display: flex;
     flex-direction: column;  
 }
-.nav_bar .nav_bar_items li:not(:first-child){
+.nav_bar .nav_bar_items li:not(:first-child) {
     background: #E06262;
     text-align: center;
-    padding: 1%;
+    padding: 2%;
 }
-.nav_bar .nav_bar_items li:first-child{
+.nav_bar .nav_bar_items li:not(:first-child):hover{
+    background-color: var(--second-origine);
+}
+.nav_bar .nav_bar_items li:first-child .menu{
     position: absolute;
-    top: 3%;
-    right: 3%;  
+    top: 1rem;
+    right: 1rem;  
 }
 .nav_bar .nav_bar_items li:nth-child(2){
     margin-top: 4%;
 }
-.nav_bar .nav_bar_items li i{
+.nav_bar .nav_bar_items li i, .nav_bar .nav_bar_items li a{
     color: white;
 }
 .toggle{
@@ -125,9 +136,8 @@ h4{
     padding: 0.5rem;
     position: relative;
     top: 0px;
-
-    
 }
+
 .Picture_part{
     width: 100%;
     vertical-align: bottom;
@@ -166,6 +176,7 @@ h4{
     height: calc(100vh - 1px);
     border-bottom:var(--tab-border-color);
     padding: var(--tab-padding);
+    transition: var(--tab-transition);
 }
 .About_tab h1{
     font-size: 6rem;
@@ -199,6 +210,10 @@ h4{
     font-size: 2rem;
     border-radius: 50%;
 }
+.About_tab .Social_icons:hover{
+    background: var(--main-color) !important;
+    border-color: var(--main-color) ;
+}
 .icons{
     display: flex;
     width: 35%;
@@ -209,6 +224,7 @@ h4{
     width: 100%;
     padding: var(--tab-padding);
     border-bottom: var(--tab-border-color);
+    transition: var(--tab-transition);
 }
 .experience_tab h2{
     margin-bottom: 7%;
@@ -276,5 +292,28 @@ h4{
     .main_window{
         width: 100%;
         left: 0;
+    }
+    .About_tab{
+        height: fit-content;
+    }
+    .About_tab,.skills_tab, .experience_tab, .education_tab{
+        padding-top: calc(100vh - 85vh); 
+    }
+    .About_tab .Social_icons{
+        margin-top: 2rem;
+    }
+    
+    h1{
+        font-size: 14.5vw !important;
+    }
+    .address{
+        margin-top: 20px;
+    }
+    h4{
+        margin: 4% 0 8% 0;
+    }
+
+    .block{
+        padding-top: 3%;
     }
 }

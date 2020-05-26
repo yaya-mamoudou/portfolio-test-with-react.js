@@ -4,7 +4,7 @@ class About extends Component {
 
     render() {
         return (
-            <div className="About_tab">
+            <div id = 'one' className="About_tab">
                    <h1 >
                         MAMOUDOU <span className="color_name">YAYA</span>
                    </h1>

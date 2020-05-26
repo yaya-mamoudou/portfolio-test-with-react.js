@@ -4,7 +4,7 @@ class Education extends Component {
 
     render() {
         return (
-            <div className = 'education_tab'>
+            <div id = 'three' className = 'education_tab'>
                 <h2>EDUCATION</h2>
                 <div className = 'block'>
                     <div className='text_area'>

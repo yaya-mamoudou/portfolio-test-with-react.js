@@ -9,7 +9,6 @@ class MainWindow extends Component {
     render() {
         return (
             <div className = 'main_window'>
-                <p>{this.props.screen}</p>
                 <About/>
                 <Experience/>
                 <Education/>

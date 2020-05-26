@@ -6,10 +6,10 @@ class NavMenu extends Component {
         return (
             <div>
                 <ul className="nav_items">
-                    <li >ABOUT</li>
-                    <li>EXPERIENCE</li>
-                    <li>EDUCATION</li>
-                    <li>SKILLS</li>
+                    <li ><a href="#one">ABOUT</a></li>
+                    <li><a href="#two">EXPERIENCE</a></li>
+                    <li><a href="#three">EDUCATION</a></li>
+                    <li><a href="#four">SKILLS</a></li>
                 </ul>
             </div>
         )
