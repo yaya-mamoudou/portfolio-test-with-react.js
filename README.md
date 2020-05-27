@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-###PREVIEW OF THE PROJECT
+### PREVIEW OF THE PROJECT
 
 
 https://sample-portfolio-test.herokuapp.com/
